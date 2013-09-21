@@ -4,6 +4,12 @@ namespace Calculator\Test\Operation;
 
 abstract class AbstractOperationTest extends \PHPUnit_Framework_TestCase {
     
+    public function tearDown() {
+        parent::tearDown();
+        
+        unset($this->Operation);
+    }
+    
     public function testInterface() {
         $classImplements = class_implements($this->Operation);
         $this->assertTrue(isset($classImplements['Calculator\Interfaces\Operation']));
