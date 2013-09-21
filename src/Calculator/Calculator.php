@@ -22,4 +22,9 @@ class Calculator {
         throw new Exception('Operation doesn\'t exists!');
     }
     
+    public function calculate($input) {
+        $tokenizer = new \Calculator\Tokenizer($this);
+        return $tokenizer->tokenize($input)->compute();
+    }
+    
 }
