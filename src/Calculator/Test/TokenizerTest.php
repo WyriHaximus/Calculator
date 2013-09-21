@@ -56,7 +56,6 @@ class TokenizerTest extends \PHPUnit_Framework_TestCase  {
      * @dataProvider testParseProvider
      */
     public function testParse($input, $expected) {
-        $this->expectOutputString('');
         $result = $this->Tokenizer->tokenize($input);
         $this->assertInstanceOf('Calculator\Compution', $result);
         $this->assertEquals($expected, $result, print_r([$expected, $result], true));
