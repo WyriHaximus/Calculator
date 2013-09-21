@@ -1,0 +1,10 @@
+{
+    "require-dev": {
+        "whatthejeff/nyancat-phpunit-resultprinter": "~1.1"
+    },
+    "autoload": {
+        "psr-0": {
+            "Calculator": "src"
+        }
+    }
+}
