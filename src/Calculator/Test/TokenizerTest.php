@@ -10,6 +10,8 @@ class TokenizerTest extends \PHPUnit_Framework_TestCase  {
         $calculator->addOperation(new \Calculator\Operation\Add());
         $calculator->addOperation(new \Calculator\Operation\Multiply());
         $calculator->addOperation(new \Calculator\Operation\Module());
+        $calculator->addOperation(new \Calculator\Operation\Subtract());
+        $calculator->addOperation(new \Calculator\Operation\Divide());
         $this->Tokenizer = new \Calculator\Tokenizer($calculator);
     }
     
